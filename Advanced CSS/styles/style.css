@@ -1,0 +1,212 @@
+/* BACKGROUND COLORS */
+/* TEXT */
+/* OPMAAK */
+/* BACKGROUND COLORS */
+/* BUTTON COLORS */
+/* ICON COLOR */
+.fa {
+  color: #fff;
+}
+
+/* ICONS */
+.fa-facebook {
+  background: #3b5998;
+}
+.fa-facebook:after {
+  content: "Like my Facebookpage";
+  padding-left: 30px;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+}
+.fa-twitter:after {
+  content: "Follow my Twitter";
+  padding-left: 30px;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.fa-google {
+  background: #dd4b39;
+}
+.fa-google:after {
+  content: "Find me on Google";
+  padding-left: 30px;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+}
+.fa-linkedin:after {
+  content: "Connect on Linkedin";
+  padding-left: 30px;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.fa-youtube {
+  background: #bb0000;
+}
+.fa-youtube:after {
+  content: "Like my YouTube";
+  padding-left: 30px;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.fa-github {
+  background: #333;
+}
+.fa-github:after {
+  content: "My projects on Github";
+  padding-left: 30px;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+/* MIXIN */
+* {
+  margin: 0;
+}
+
+/* ALLE OPDRACHTEN */
+body {
+  background: #c3cfe2;
+  font-size: 22px;
+  color: #505050;
+  font-family: Helvetica;
+  line-height: 2;
+  padding: 0;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* OPDRACHT 1 */
+.opdracht1 {
+  background: #fff;
+  width: 400px;
+  height: 400px;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.opdracht1__p {
+  padding: 30px 50px;
+}
+
+.footer {
+  background: #686de0;
+  width: 340px;
+  height: 130px;
+  padding: 40px 30px;
+  border-radius: 0 0 15px 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.footer__img {
+  width: 125px;
+  border-radius: 50%;
+  border: solid white 5px;
+  margin-top: -100px;
+}
+.footer__h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: Helvetica;
+}
+.footer__p {
+  line-height: 25px;
+  color: #a1a1a1;
+}
+
+/* OPDRACHT 2 */
+.container {
+  position: relative;
+  width: 50%;
+}
+.container__img--foto {
+  display: block;
+  width: 250px;
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 15%;
+}
+.container__btn--knop {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  color: #4e4b4b;
+  border: white solid 2px;
+  background-color: #fff;
+}
+.container__btn {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 50px;
+  right: 0;
+  border-radius: 15%;
+  width: 250px;
+  height: auto;
+  opacity: 0;
+  transition: 0.5s ease;
+  text-align: center;
+  background-color: #779e1c;
+}
+.container__btn:hover {
+  opacity: 1;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 480px) {
+  .content {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/* OPDRACHT 3 */
+.icons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0%;
+  top: 30%;
+  width: 250px;
+  transform: translateX(185px);
+}
+.icons a {
+  padding: 20px;
+  font-size: 35px;
+  text-align: left;
+  text-decoration: none;
+}
+.icons a:hover {
+  opacity: 0.7;
+  transform: translateX(-170px);
+  transition: 1.5s all;
+}/*# sourceMappingURL=style.css.map */
